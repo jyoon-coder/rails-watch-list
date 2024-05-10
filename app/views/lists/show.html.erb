@@ -1,1 +1,9 @@
+<!-- app/views/lists/index.html.erb -->
 
+<h1>My Lists</h1>
+
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= list.name %></li>
+  <% end %>
+</ul>

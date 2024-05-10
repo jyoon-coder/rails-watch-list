@@ -43,6 +43,6 @@ class ListsController < ApplicationController
 
   def list_params
     # we are whitelisting the attributes a user can give us
-    params.require(:list).permit(:name)
+    params.require(:list).permit(:name, :photo)
   end
 end
